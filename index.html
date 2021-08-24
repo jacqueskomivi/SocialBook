@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>SocialBook</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img class="logo" src="images/logo.png" alt="SocialBook Logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.jpg" alt="Profile">
+            </div>
+        </div>
+        <!------------settings-menu----------->
+
+        <div class="settings-menu">
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.jpg">
+                    <div>
+                        <p>Jacques Komivi</p>
+                        <a href="#">Votre profil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Donnez votre avis</p>
+                        <a href="#">Aidez nous à améliorer notre site</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Paramètre & Confidentialité <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Aide <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Afiichage et Accessibilité <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Deconnexion <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!------------left-sidebar----------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Infos Récentes</a>
+                <a href="#"><img src="images/friends.png">Liste d'Amis</a>
+                <a href="#"><img src="images/group.png">Vos groupes</a>
+                <a href="#"><img src="images/marketplace.png">Boutiques</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Racourcis</p>
+                <a href="#"><img src="images/shortcut-1.png">Developeur Web</a>
+                <a href="#"><img src="images/shortcut-2.png">Cours de Web Design</a>
+                <a href="#"><img src="images/shortcut-3.png">Developement Full Stack</a>
+                <a href="#"><img src="images/shortcut-4.png">Expert BigDATA</a>
+
+            </div>
+        </div>
+        <!------------main-content----------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Publier une story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.jpg" alt="">
+                    <p>Gloria</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.jpg" alt="">
+                    <p>Eliel</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.jpg" alt="">
+                    <p>Yedidia</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.jpg" alt="">
+                    <p>Gerard</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.jpg">
+                    <div>
+                        <p>Jacques Komivi</p>
+                        <small>Public <i class="fas fa-caret-down"></i> </small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Ecrivez quelque chose..."></textarea>
+                    <div class="add-post-links">
+                        <a href=""><img src="images/live-video.png">En Direct</a>
+                        <a href=""><img src="images/photo.png">Photo/Video</a>
+                        <a href=""><img src="images/feeling.png">Feeling Activity</a>
+
+                    </div>
+                </div>
+            </div>
+            <!------------1st Post----------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpg">
+                        <div>
+                            <p>Jacques Komivi</p>
+                            <span>24 Mars 2021 - 10:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis"></i></a>
+                </div>
+
+                <p class="post-text"><span> Lorem ipsum </span>dolor sit amet consectetur adipisicing elit. Id beatae architecto autem quis, voluptate tenetur sunt ex itaque at dolorem, nihil odio atque nisi! Molestiae voluptatum excepturi blanditiis eos architecto?</p>
+                <img src="images/feed-image-1.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">52</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <!------------2nd Post----------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-4.jpg">
+                        <div>
+                            <p>Gérard Maho</p>
+                            <span>21 Mars 2021 - 10:50</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis"></i></a>
+                </div>
+
+                <p class="post-text"><span> Lorem ipsum </span>dolor sit amet consectetur adipisicing elit. Id beatae architecto autem quis, voluptate tenetur sunt ex itaque at dolorem, nihil odio atque nisi! Molestiae voluptatum excepturi blanditiis eos architecto?</p>
+                <img src="images/feed-image-2.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">52</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-4.jpg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <!------------3rd Post----------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-1.jpg">
+                        <div>
+                            <p>Gloria Kouakou</p>
+                            <span>20 Mars 2021 - 11:45</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis"></i></a>
+                </div>
+
+                <p class="post-text"><span> Lorem ipsum </span>dolor sit amet consectetur adipisicing elit. Id beatae architecto autem quis, voluptate tenetur sunt ex itaque at dolorem, nihil odio atque nisi! Molestiae voluptatum excepturi blanditiis eos architecto?</p>
+                <img src="images/feed-image-3.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">250</div>
+                        <div><img src="images/comments.png">2k</div>
+                        <div><img src="images/share.png">42</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-1.jpg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------------4th Post----------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-3.jpg">
+                        <div>
+                            <p>Yedidia Delon</p>
+                            <span>24 Mars 2021 - 10:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis"></i></a>
+                </div>
+
+                <p class="post-text"><span> Lorem ipsum </span>dolor sit amet consectetur adipisicing elit. Id beatae architecto autem quis, voluptate tenetur sunt ex itaque at dolorem, nihil odio atque nisi! Molestiae voluptatum excepturi blanditiis eos architecto?</p>
+                <img src="images/feed-image-4.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">36</div>
+                        <div><img src="images/comments.png">24</div>
+                        <div><img src="images/share.png">13</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-3.jpg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <!------------5th Post----------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-2.jpg">
+                        <div>
+                            <p>Eliel Kouakou</p>
+                            <span>10 Mars 2021 - 5:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis"></i></a>
+                </div>
+
+                <p class="post-text"><span> Lorem ipsum </span>dolor sit amet consectetur adipisicing elit. Id beatae architecto autem quis, voluptate tenetur sunt ex itaque at dolorem, nihil odio atque nisi! Molestiae voluptatum excepturi blanditiis eos architecto?</p>
+                <img src="images/feed-image-5.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">85</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">10</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.jpg"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Voir plus...</button>
+        </div>
+
+
+        <!------------right-sidebar----------->
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Evenements</h4>
+                <a href="#">Tout Voir</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>Mars</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+                    <a href="#">Plus d'Infos</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>25</h3>
+                    <span>Juillet</span>
+                </div>
+                <div class="right-event">
+                    <h4>Anniversaire</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Jacques Komivi</p>
+                    <a href="#">Plus d'Infos</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Publicité</h4>
+                <a href="#">Fermer</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="#">Cacher</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.jpg">
+                </div>
+                <p>Eliel Kouakou</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-4.jpg">
+                </div>
+                <p>Gerard Maho</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.jpg">
+                </div>
+                <p>Samantha Rose</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/22cbd97188.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <div class="footer">
+        <p>Copyright 2021 - Jacques Komivi </p>
+    </div>
+
+</body>
+
+</html>
